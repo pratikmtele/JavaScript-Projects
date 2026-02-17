@@ -16,46 +16,86 @@
                 <div class="quiz-info">
                     <div class="stat">
                         <small>High Score</small>
-                        <h3>12,000</h3>
-                    </div>
-                    <div class="stat">
-                        <small>Quizzes Played</small>
-                        <h3>310</h3>
+                        <h3 id="high-score">12,000</h3>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main-section">
             <div class="container">
-                <div class="heading">
-                    <h2>Choose your Battlefield</h2>
-                    <p>Test your skills, track performance, and dominate the leaderboard.</p>
+                <div id="subject-selector" style="display: none;">
+                    <div class="heading">
+                        <h2>Choose your Battlefield</h2>
+                        <p>Test your skills, track performance, and dominate the leaderboard.</p>
+                    </div>
+                    <div class="subjects">
+                        <div data-subject="JavaScript" class="card">
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div data-subject="HTML & CSS" class="card">
+                            <h4>HTML & CSS</h4>
+                        </div>
+                        <div data-subject="React" class="card">
+                            <h4>React</h4>
+                        </div>
+                        <div data-subject="General Knowledge" class="card">
+                            <h4>General Knowledge</h4>
+                        </div>
+                        <div data-subject="Aptitude" class="card">
+                            <h4>Aptitude</h4>
+                        </div>
+                        <div data-subject="Node.js" class="card">
+                            <h4>Node.js</h4>
+                        </div>
+                    </div>
+                    <div class="own-topic">
+                        <h3>Or play your own topic</h3>
+                        <div class="custom-subject">
+                            <input type="text" id="subjectInput" placeholder="Enter subject (e.g MongoDB, DevOps)">
+                            <button class="start-quiz">Start Quiz</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="subjects">
-                    <div class="card">
-                        <h4>JavaScript</h4>
+                <div class="quiz-wrapper">
+                    <div class="quiz-progress">
+                        <p>Question <span class="current-que">3</span> of <span class="total-ques">10</span></p>
+                        <span>⏱ <span class="timer">1:00</span></span>
                     </div>
-                    <div class="card">
-                        <h4>HTML & CSS</h4>
+                    <div class="question-card">
+                        <h3 class="question">Which JavaScript method is used to convert JSON into an object?</h3>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="answer" />
+                                <span class="custom-radio"></span>
+                                JSON.parse()
+                            </label>
+
+                            <label class="option">
+                                <input type="radio" name="answer" />
+                                <span class="custom-radio"></span>
+                                JSON.stringify()
+                            </label>
+
+                            <label class="option">
+                                <input type="radio" name="answer" />
+                                <span class="custom-radio"></span>
+                                Object.toJSON()
+                            </label>
+
+                            <label class="option">
+                                <input type="radio" name="answer" />
+                                <span class="custom-radio"></span>
+                                parse.JSON()
+                            </label>
+                        </div>
                     </div>
-                    <div class="card">
-                        <h4>React</h4>
-                    </div>
-                    <div class="card">
-                        <h4>General Knowledge</h4>
-                    </div>
-                    <div class="card">
-                        <h4>Aptitude</h4>
-                    </div>
-                    <div class="card">
-                        <h4>Node.js</h4>
-                    </div>
-                </div>
-                <div class="own-topic">
-                    <h3>Or play your own topic</h3>
-                    <div class="custom-subject">
-                        <input type="text" placeholder="Enter subject (e.g MongoDB, DevOps)">
-                        <button>Start Quiz</button>
+                    <div class="quiz-actions">
+                        <button class="btn back-btn">← Back</button>
+                        <div class="right-cta">
+                            <button class="btn skip-btn">Skip</button>
+                            <button class="btn next-btn">Next →</button>
+                            <button class="btn submit-btn">Submit Quiz</button>
+                        </div>
                     </div>
                 </div>
             </div>
