@@ -9,6 +9,18 @@
 </head>
 
 <body>
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="brain-icon">🚀</div>
+            <h2 id="loading-text">Firing Up</h2>
+            <p>Loading your ultimate quiz challenge...</p>
+            <div class="loading-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -62,32 +74,8 @@
                         <span>⏱ <span class="timer">1:00</span></span>
                     </div>
                     <div class="question-card">
-                        <h3 class="question">Which JavaScript method is used to convert JSON into an object?</h3>
-                        <div class="options">
-                            <label class="option">
-                                <input type="radio" name="answer" />
-                                <span class="custom-radio"></span>
-                                JSON.parse()
-                            </label>
-
-                            <label class="option">
-                                <input type="radio" name="answer" />
-                                <span class="custom-radio"></span>
-                                JSON.stringify()
-                            </label>
-
-                            <label class="option">
-                                <input type="radio" name="answer" />
-                                <span class="custom-radio"></span>
-                                Object.toJSON()
-                            </label>
-
-                            <label class="option">
-                                <input type="radio" name="answer" />
-                                <span class="custom-radio"></span>
-                                parse.JSON()
-                            </label>
-                        </div>
+                        <h3 class="question"></h3>
+                        <div class="options"></div>
                     </div>
                     <div class="quiz-actions">
                         <button class="btn back-btn">← Back</button>
